@@ -17,6 +17,8 @@ import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
+
+// Thumbnail runs based on S3 objectPut event only for .jpg/.jpeg/.png file formats
 public class Thumbnail implements RequestHandler<S3Event, String> {
     private final AmazonS3 s3 = new AmazonS3Client();
     private static final String DESTINATION_BUCKET_NAME = "cloud-assign-bucket-2";

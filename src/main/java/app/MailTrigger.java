@@ -24,10 +24,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 
+// MailTrigger runs based on EventBridge event rule
 public class MailTrigger implements RequestHandler<ScheduledEvent, String>{
     private static final String TOPIC_ARN = "arn:aws:sns:us-east-1:726770482895:s3-mail";
     private static final String SUBJECT = "Daily S3 bucket update";
-    private static final String MESSAGE = "This is a test email sent from an AWS Lambda function.";
     private static final String BUCKET_NAME = "cloud-assign-bucket-1";
 
     public String handleRequest(ScheduledEvent event, Context context) {
