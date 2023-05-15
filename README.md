@@ -1,4 +1,4 @@
-# Cloud Computing Assignment - BITS Pilani WILP
+# AWS Lambda Java Example
 
 Using AWS lambda, write a program to monitor an S3 Uri. Whenever a user uploads data into the S3 storage, the program should capture the details. At the end of the day the program must send out an email to select users displaying the following information
 
